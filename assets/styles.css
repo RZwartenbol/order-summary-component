@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 500;
+  font-size: 1.6rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-size: 100% 50vh;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: hsl(225, 100%, 94%);
+}
+
+.ordercard--container {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 15px;
+  width: 46rem;
+}
+
+.ordercard--container img {
+  border-radius: 15px 15px 0 0;
+}
+
+.ordercard--info-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin: 4.4rem;
+}
+
+.ordercard--header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+  margin: 0 2rem;
+}
+
+.ordercard--header h1 {
+  color: hsl(223, 47%, 23%);
+  font-weight: 900;
+}
+
+.ordercard--header p {
+  color: hsl(224, 23%, 55%);
+  text-align: center;
+  line-height: 1.6;
+}
+
+.ordercard--plan-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 15px;
+  background-color: hsl(225, 100%, 98%);
+  padding: 2.4rem;
+}
+
+.ordercard--plan-price-wrap {
+  display: flex;
+  gap: 2rem;
+}
+
+.ordercard--plan-price h2 {
+  color: hsl(223, 47%, 23%);
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.ordercard--plan-price p {
+  color: hsl(224, 23%, 55%);
+  font-weight: 500;
+}
+
+.ordercard--btn {
+  font-weight: 700;
+  border: none;
+  color: hsl(245, 75%, 52%);
+  background-color: transparent;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.ordercard--btn:hover {
+  color: hsla(245, 75%, 52%, 0.7);
+  text-decoration: none;
+}
+
+.ordercard--payment-btn {
+  color: hsl(225, 100%, 94%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: hsl(245, 75%, 52%);
+  border: none;
+  border-radius: 10px;
+  padding: 1.8rem;
+  cursor: pointer;
+}
+
+.ordercard--payment-btn:hover {
+  background-color: hsla(245, 75%, 52%, 0.7);
+}
+
+.ordercard--cancel-btn {
+  color: hsl(224, 23%, 55%);
+  font-size: 1.6rem;
+  font-weight: 700;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.ordercard--cancel-btn:hover {
+  color: hsl(223, 47%, 23%);
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url(images/pattern-background-mobile.svg);
+  }
+
+  .ordercard--container {
+    max-width: 90%;
+  }
+
+  .ordercard--info-wrap {
+    margin: 2.4rem;
+  }
+
+  .ordercard--header h1 {
+    font-size: 2.4rem;
+  }
+
+  .ordercard--plan-container {
+    padding: 1.8rem;
+  }
+}
